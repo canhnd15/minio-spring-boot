@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: Spring Boot and MinIO Integration
+  profiles:
+    active: minio
+  servlet:
+    multipart:
+      max-file-size: 5GB
+      max-request-size: 5GB
+
+minio:
+  url: http://localhost:9000
+  key:
+    access: admin
+    secret: Admin@123
+  bucket:
+    default: demo
+
+server:
+  port: 9005
