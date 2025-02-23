@@ -6,7 +6,7 @@ spring:
   servlet:
     multipart:
       max-file-size: 5GB
-      max-request-size: 5GB
+      max-request-size: 50GB
 
 minio:
   url: http://localhost:9000
